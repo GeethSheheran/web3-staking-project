@@ -36,6 +36,9 @@ const Container = styled.div`
   justify-content: space-between;
   background-color: #222;
   padding: 5%;
+  @media (max-width: 768px) {
+    flex-direction: column;  // Cards will stack vertically on mobile devices
+  }
 `;
 
 // Styled card components
