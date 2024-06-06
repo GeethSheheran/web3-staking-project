@@ -43,7 +43,7 @@ const Card = styled.div`
   flex: 1;
   margin: 10px;
   padding: 20px;
-  background-color: #1d2039;
+  background-color: rgba(29, 32, 57, 0.6); 
   color: white;
   border: 5px solid blue;
   animation: ${animateBorder} 3s infinite ease-in-out;
@@ -100,7 +100,7 @@ const LeftCard = () => (
 // Main component
 const HowItWorks = () => (
   <div>
-    <AnimatedHeader>Understanding the SoB NFT Ecosystem</AnimatedHeader>
+    <AnimatedHeader>HOW IT WORKS</AnimatedHeader>
     <Container>
       <LeftCard />
       <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>

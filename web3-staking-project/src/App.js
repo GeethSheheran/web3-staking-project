@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import HowItWorks from './Components/HowItWorks';
 import NFTStaking from './Components/NFTStaking';
+import "@fontsource/poppins";
 
 const App = () => {
   return (

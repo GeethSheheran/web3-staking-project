@@ -77,44 +77,44 @@ const NavLink = styled.a`
 
 const ConnectButton = styled.button`
 background-color: #953ff5;
-color: white;
-border: none;
-padding: 1rem 2rem;
-font-size: 1rem;
-cursor: pointer;
-transition: background-color 0.3s, border-color 0.3s;
-border-radius: 30px;
-position: relative;
-overflow: hidden;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
 
-&:hover {
-  background-color: #222;
-  border-color: #000;
-  color:white;
-  font-weight: bold;
-}
+  &:hover {
+    background-color: #222;
+    border-color: #000;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.9); /* Pink glow effect */
+  }
 
-&::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(255,0,1500,0.4) 0%, rgba(0,204,255,0.4) 100%);
-  transition: width 0.3s;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,0,150,0.4) 0%, rgba(0,204,255,0.4) 100%);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
-&:hover::after {
-  width: 100%;
-  
-}
+  &:hover::after {
+    width: 100%;
+  }
 
-@media (max-width: 768px) {
-  margin-top: -40px;
-  margin-bottom: 20px;
-}
+  @media (max-width: 768px) {
+    margin-top: -40px;
+    margin-bottom: 20px;
+  }
 `;
 
 const MenuIcon = styled.div`
